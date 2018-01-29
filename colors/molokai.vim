@@ -65,7 +65,7 @@ hi Float guifg=#AE81FF guibg=NONE guisp=NONE gui=NONE ctermfg=141 ctermbg=NONE c
 hi Number guifg=#AE81FF guibg=NONE guisp=NONE gui=NONE ctermfg=141 ctermbg=NONE cterm=NONE
 hi Boolean guifg=#AE81FF guibg=NONE guisp=NONE gui=NONE ctermfg=141 ctermbg=NONE cterm=NONE
 hi Operator guifg=#F92672 guibg=NONE guisp=NONE gui=NONE ctermfg=197 ctermbg=NONE cterm=NONE
-hi CursorLine guifg=NONE guibg=NONE guisp=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=underline
+hi CursorLine guifg=NONE guibg=NONE guisp=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
 hi Question guifg=#66D9EF guibg=NONE guisp=NONE gui=NONE ctermfg=81 ctermbg=NONE cterm=NONE
 hi WarningMsg guifg=#FFFFFF guibg=#333333 guisp=#333333 gui=bold ctermfg=15 ctermbg=236 cterm=bold
 hi VisualNOS guifg=NONE guibg=#403D3D guisp=#403D3D gui=NONE ctermfg=NONE ctermbg=238 cterm=NONE
@@ -99,5 +99,15 @@ hi Macro guifg=#C4BE89 guibg=NONE guisp=NONE gui=italic ctermfg=186 ctermbg=NONE
 hi Underlined guifg=#808080 guibg=NONE guisp=NONE gui=underline ctermfg=8 ctermbg=NONE cterm=underline
 hi DiffAdd guifg=NONE guibg=#13354A guisp=#13354A gui=NONE ctermfg=NONE ctermbg=23 cterm=NONE
 hi cursorim guifg=#192224 guibg=#536991 guisp=#536991 gui=NONE ctermfg=235 ctermbg=60 cterm=NONE
-hi ColorColumn guibg=#FD951F ctermbg=230
+"hi ColorColumn guibg=#FD951F ctermbg=230
+augroup collumnLimit
+  autocmd!
+  autocmd BufEnter,WinEnter,InsertLeave,FileType c,cpp,python,javascript,java
+        \ highlight CollumnLimit guibg=#FD951F ctermbg=230
+  let collumnLimit = 79 " feel free to customize
+  let pattern =
+        \ '\%<' . (collumnLimit+1) . 'v.\%>' . collumnLimit . 'v'
+  autocmd BufEnter,WinEnter,InsertLeave,FileType c,cpp,python,javascript,java
+        \ let w:m1=matchadd('CollumnLimit', pattern, -1)
+augroup END
 set background=dark
