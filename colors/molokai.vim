@@ -26,11 +26,12 @@ let g:colors_name = "molokai"
 "hi SpellLocal -- no settings --
 "hi DefinedName -- no settings --
 "hi LocalVariable -- no settings --
-"hi SpellBad -- no settings --
 "hi CTagsClass -- no settings --
 "hi TabLine -- no settings --
 "hi clear -- no settings --
 "hi IncSearch guifg=#C4BE89 guibg=#000000 guisp=#000000 gui=NONE ctermfg=186 ctermbg=NONE cterm=NONE
+hi SpellCap guifg=#F92672 guibg=#232526 guisp=#232526 gui=bold ctermfg=0 ctermbg=172 cterm=bold
+hi SpellBad guifg=#F92672 guibg=#232526 guisp=#232526 gui=bold ctermfg=255 ctermbg=124 cterm=bold
 hi TabLineSel guifg=#000000 guibg=#00AEFF guisp=#000000 gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
 hi TabLineFill guifg=#000000 guibg=#00AEFF guisp=#000000 gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
 hi TabLine guifg=#000000 guibg=#00AEFF guisp=#000000 gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
