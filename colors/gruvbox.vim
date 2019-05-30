@@ -511,11 +511,11 @@ call s:HL('IncSearch', s:hls_cursor, s:bg0, s:inverse)
 
 call s:HL('Underlined', s:blue, s:none, s:underline)
 
-call s:HL('StatusLine',   s:none, s:yellow, s:inverse)
-call s:HL('StatusLineNC', s:bg1, s:fg4, s:inverse)
+call s:HL('StatusLine',   s:red, s:red, s:none)
+call s:HL('StatusLineNC', s:red, s:red, s:bold)
 
 " The column separating vertically split windows
-call s:HL('VertSplit', s:bg3, s:vert_split)
+call s:HL('VertSplit', s:orange, s:gray)
 
 " Current match in wildmenu completion
 call s:HL('WildMenu', s:blue, s:bg2, s:bold)
