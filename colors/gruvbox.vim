@@ -378,11 +378,11 @@ function! s:HL(group, fg, ...)
   let fg = a:fg
 
   " background
-  if a:0 >= 1
-    let bg = a:1
-  else
-    let bg = s:none
-  endif
+  "if a:0 >= 1
+  "  let bg = a:1
+  "else
+  let bg = s:none
+  "endif
 
   " emphasis
   if a:0 >= 2 && strlen(a:2)
@@ -501,7 +501,7 @@ if version >= 703
 endif
 
 hi! link NonText GruvboxBg2
-hi! link SpecialKey GruvboxBg2
+hi! link SpecialKey GruvboxAqua
 
 call s:HL('Visual',    s:none,  s:bg3, s:invert_selection)
 hi! link VisualNOS Visual
@@ -511,7 +511,7 @@ call s:HL('IncSearch', s:hls_cursor, s:bg0, s:inverse)
 
 call s:HL('Underlined', s:blue, s:none, s:underline)
 
-call s:HL('StatusLine',   s:bg2, s:fg1, s:inverse)
+call s:HL('StatusLine',   s:none, s:yellow, s:inverse)
 call s:HL('StatusLineNC', s:bg1, s:fg4, s:inverse)
 
 " The column separating vertically split windows

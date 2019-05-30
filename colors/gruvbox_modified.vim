@@ -10,6 +10,9 @@ endif
 
 set t_Co=256
 let g:colors_name = "gruvbox_modified"
+if !(has('termguicolors') && &termguicolors) && !has('gui_running') && &t_Co != 256
+  finish
+endif
 
 "hi WildMenu -- no settings --
 "hi Title -- no settings --
@@ -29,7 +32,7 @@ hi Special guifg=#5f8787 guibg=NONE guisp=NONE gui=NONE ctermfg=66 ctermbg=NONE 
 hi Character guifg=#5f8787 guibg=NONE guisp=NONE gui=NONE ctermfg=66 ctermbg=NONE cterm=NONE
 "hi TabLineSel -- no settings --
 "hi Number guifg=#af87ff guibg=NONE guisp=NONE gui=NONE ctermfg=141 ctermbg=NONE cterm=NONE
-hi CursorLine guifg=NONE guibg=#3a3a3a guisp=#3a3a3a gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
+hi CursorLine guifg=NONE guibg=#3a3a3a guisp=#3a3a3a gui=NONE ctermfg=NONE ctermbg=237 cterm=NONE
 "hi Union -- no settings --
 "hi TabLineFill -- no settings --
 "hi Define -- no settings --
