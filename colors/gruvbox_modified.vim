@@ -19,6 +19,7 @@ endif
 "hi CTagsMember -- no settings --
 "hi CTagsGlobalConstant -- no settings --
 "hi StorageClass -- no settings --
+hi StorageClass guifg=NONE guibg=NONE guisp=NONE gui=bold ctermfg=132 ctermbg=NONE cterm=bold
 "hi Special -- no settings --
 hi Special guifg=#5f8787 guibg=NONE guisp=NONE gui=NONE ctermfg=66 ctermbg=NONE cterm=NONE
 "hi Normal guifg=#d7d7af guibg=NONE guisp=NONE gui=NONE ctermfg=187 ctermbg=NONE cterm=NONE
@@ -36,12 +37,12 @@ hi CursorLine guifg=NONE guibg=#3a3a3a guisp=#3a3a3a gui=NONE ctermfg=NONE cterm
 "hi Union -- no settings --
 "hi TabLineFill -- no settings --
 "hi Define -- no settings --
-hi Define guifg=#5f8787 guibg=NONE guisp=NONE gui=NONE ctermfg=66 ctermbg=NONE cterm=NONE
+hi Define guifg=#5f8787 guibg=NONE guisp=NONE gui=NONE ctermfg=132 ctermbg=NONE cterm=NONE
 "hi FoldColumn -- no settings --
 "hi EnumerationName -- no settings --
 "hi SpellLocal -- no settings --
 "hi SpecialKey -- no settings --
-hi SpecialKey guifg=#5f8787 guibg=NONE guisp=NONE gui=NONE ctermfg=66 ctermbg=NONE cterm=NONE
+hi SpecialKey guifg=#5f8787 guibg=NONE guisp=NONE gui=NONE ctermfg=132 ctermbg=NONE cterm=NONE
 "hi Tag -- no settings --
 "hi CTagsClass -- no settings --
 "hi Structure -- no settings --
@@ -50,9 +51,9 @@ hi SpecialKey guifg=#5f8787 guibg=NONE guisp=NONE gui=NONE ctermfg=66 ctermbg=NO
 "hi clear -- no settings --
 hi SignColumn guifg=#87d700 guibg=#262626 guisp=#262626 gui=NONE ctermfg=65 ctermbg=235 cterm=NONE
 hi SpecialComment guifg=NONE guibg=NONE guisp=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
-hi Typedef guifg=#5fd7ff guibg=NONE guisp=NONE gui=NONE ctermfg=81 ctermbg=NONE cterm=NONE
+hi Typedef guifg=#5fd7ff guibg=NONE guisp=NONE gui=NONE ctermfg=132 ctermbg=NONE cterm=NONE
 hi Folded guifg=#585858 guibg=NONE guisp=NONE gui=NONE ctermfg=240 ctermbg=NONE cterm=NONE
-hi PreCondit guifg=NONE guibg=NONE guisp=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
+hi PreCondit guifg=NONE guibg=NONE guisp=NONE gui=bold ctermfg=132 ctermbg=NONE cterm=bold
 hi Include guifg=#87d700 guibg=NONE guisp=NONE gui=NONE ctermfg=65 ctermbg=NONE cterm=NONE
 hi Float guifg=#af87ff guibg=NONE guisp=NONE gui=NONE ctermfg=141 ctermbg=NONE cterm=NONE
 hi StatusLineNC guifg=#d7d7af guibg=#282828 guisp=#282828 gui=NONE ctermfg=187 ctermbg=235 cterm=NONE
@@ -63,7 +64,7 @@ hi Ignore guifg=NONE guibg=#262626 guisp=#262626 gui=NONE ctermfg=NONE ctermbg=2
 hi Debug guifg=#af8787 guibg=NONE guisp=NONE gui=bold ctermfg=138 ctermbg=NONE cterm=bold
 hi PMenuSbar guifg=NONE guibg=#111111 guisp=#111111 gui=NONE ctermfg=NONE ctermbg=233 cterm=NONE
 hi Identifier guifg=#ff8700 guibg=NONE guisp=NONE gui=NONE ctermfg=208 ctermbg=NONE cterm=NONE
-hi SpecialChar guifg=NONE guibg=NONE guisp=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
+hi SpecialChar guifg=NONE guibg=NONE guisp=NONE gui=bold ctermfg=132 ctermbg=NONE cterm=bold
 hi Conditional guifg=#af5f87 guibg=NONE guisp=NONE gui=bold ctermfg=132 ctermbg=NONE cterm=bold
 hi Todo guifg=#d7d7af guibg=#262626 guisp=#262626 gui=bold ctermfg=187 ctermbg=235 cterm=bold
 hi LineNr guifg=#bcbcbc guibg=NONE guisp=NONE gui=NONE ctermfg=250 ctermbg=NONE cterm=NONE
@@ -96,7 +97,7 @@ hi Cursor guifg=NONE guibg=#ffffd7 guisp=#ffffd7 gui=NONE ctermfg=NONE ctermbg=2
 hi Error guifg=NONE guibg=#af0000 guisp=#af0000 gui=NONE ctermfg=NONE ctermbg=124 cterm=NONE
 hi PMenu guifg=#d7d7af guibg=#282828 guisp=#282828 gui=NONE ctermfg=187 ctermbg=235 cterm=NONE
 hi Constant guifg=#d3869b guibg=NONE guisp=NONE gui=bold ctermfg=132 ctermbg=NONE cterm=bold
-hi DefinedName guifg=NONE guibg=#000000 guisp=#000000 gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
+hi DefinedName guifg=NONE guibg=#000000 guisp=#000000 gui=NONE ctermfg=132 ctermbg=NONE cterm=NONE
 hi String guifg=#b9bb26 guibg=NONE guisp=NONE gui=NONE ctermfg=142 ctermbg=NONE cterm=NONE
 hi PMenuThumb guifg=NONE guibg=#d7d7af guisp=#d7d7af gui=NONE ctermfg=NONE ctermbg=187 cterm=NONE
 hi MatchParen guifg=NONE guibg=#ff8700 guisp=#ff8700 gui=bold ctermfg=235 ctermbg=208 cterm=bold
